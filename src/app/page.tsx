@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 export default function Home() {
   const [markdown, setMarkdown] = useState(''); // State to hold our markdown input
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMarkdown(event.target.value); // Update the state
   };
 
@@ -16,7 +16,7 @@ export default function Home() {
     
     <div className={styles.container}>
       <Head>
-        <title>Ali's Zen Markdown Editor</title>
+        <title>Zen Markdown Editor</title>
       </Head>
 
       <textarea

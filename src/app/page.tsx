@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 export default function Home() {
   const [markdown, setMarkdown] = useState(''); // State to hold our markdown input
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setMarkdown(event.target.value); // Update the state
   };
 
